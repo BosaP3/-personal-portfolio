@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Fundo com degradê*/
+body {
+    background: radial-gradient(circle at top left, rgba(0, 153, 255, 0.5), transparent 50%),
+        radial-gradient(circle at bottom right, rgba(0, 153, 255, 0.5), transparent 50%),
+        #000;
+    color: #FFF;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #FFF;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        background: radial-gradient(circle at top left, rgba(0, 153, 255, 0.5), transparent 50%),
+            radial-gradient(circle at bottom right, rgba(0, 153, 255, 0.5), transparent 50%),
+            #000;
+        color: #FFF;
+        align-items: flex-start;
+    }
+
+    .main {
+        width: auto; 
+        border: 1px solid #FFF;
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+}
